@@ -7,59 +7,70 @@
 /* header */
 .header {
   background-color: #fff;
-  overflow: hidden;
+  // overflow: hidden;
   border-bottom: 1px solid #DDD;
+  position: relative;
   .header_bg {
-    .container {
-      @include flex(row, space-between, center);
-      .logo_wrap {
-        .logo {
-          max-height: 28px;
-          display: block;
-          img {
-            height: 100%;
-          }
+    width: 100%;
+    height: 210px;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    border-bottom: 1px solid #DDD;
+  }
+  .container {
+    @include flex(row, space-between, center);
+    position: relative;
+    z-index: 1000;
+    .logo_wrap {
+      .logo {
+        max-height: 28px;
+        display: block;
+        img {
+          height: 100%;
         }
       }
-      .menu {
-        @include flex;
-        .depth1 {
-          @include flex(row, flex-start, flex-start);
-          column-gap: 20px;
-          > li {
-            position: relative;
-            > a {
-              display: block;
-              font-size: 19px;
-              font-weight: 500;
-              line-height: 80px;
-              padding: 0 30px;
-            }
-            .depth2 {
-              width: 100%;
-              display: block;
-              position: absolute;
-              top: 110%;
-              left: 0;
-              li {
-                text-align: center;
-                a {
-                  display: block;
-                  font-size: 17px;
-                  color: #AAA;
-                  margin: 9px 0;
-                }
+    }
+    .menu {
+      @include flex;
+      .depth1 {
+        @include flex(row, flex-start, flex-start);
+        column-gap: 20px;
+        > li {
+          position: relative;
+          > a {
+            display: block;
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 80px;
+            padding: 0 30px;
+          }
+          .depth2 {
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 110%;
+            left: 0;
+            li {
+              text-align: center;
+              a {
+                display: block;
+                font-size: 17px;
+                color: #AAA;
+                margin: 9px 0;
               }
             }
           }
         }
-        .all_menu {
-          @include flex;
-          margin-left: 35px;
-          i {
-            font-size: 25px;
-            color: #551A8B;
-          }
+      }
+      .all_menu {
+        @include flex;
+        margin-left: 35px;
+        i {
+          font-size: 25px;
+          color: #551A8B;
         }
       }
     }
