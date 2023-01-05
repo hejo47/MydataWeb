@@ -1,0 +1,101 @@
+.container {
+  width: 100%;
+  max-width: 1380px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+/* header */
+.header {
+  background-color: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid #DDD;
+  .header_bg {
+    .container {
+      @include flex(row, space-between, center);
+      .logo_wrap {
+        .logo {
+          max-height: 28px;
+          display: block;
+          img {
+            height: 100%;
+          }
+        }
+      }
+      .menu {
+        @include flex;
+        .depth1 {
+          @include flex(row, flex-start, flex-start);
+          column-gap: 20px;
+          > li {
+            position: relative;
+            > a {
+              display: block;
+              font-size: 19px;
+              font-weight: 500;
+              line-height: 80px;
+              padding: 0 30px;
+            }
+            .depth2 {
+              width: 100%;
+              display: block;
+              position: absolute;
+              top: 110%;
+              left: 0;
+              li {
+                text-align: center;
+                a {
+                  display: block;
+                  font-size: 17px;
+                  color: #AAA;
+                  margin: 9px 0;
+                }
+              }
+            }
+          }
+        }
+        .all_menu {
+          @include flex;
+          margin-left: 35px;
+          i {
+            font-size: 25px;
+            color: #551A8B;
+          }
+        }
+      }
+    }
+  }
+}
+.section {
+  &.first {
+    background-image: url(../img/common/bg/rowgroup_bg.png);
+    background-repeat: repeat;
+    background-position: top center;
+    background-size: contain;
+    .container {
+      @include flex(row, space-between, flex-start);
+      column-gap: 50px;
+      padding-top: 60px;
+      padding-bottom: 100px;
+      .main_banner_wrap {
+        width: 40%;
+        max-width: 470px;
+        .swiper {
+          &-wrapper {
+            overflow: hidden;
+            border-radius: 30px;
+            .swiper_slide {
+              height: 100%;
+              img {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .main_quick_menu {
+        
+      }
+    }
+  }
+  
+}

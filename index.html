@@ -4,11 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <title>마이데이터</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header_bg">
+        <div class="container">
+          <div class="logo_wrap">
+            <a href="#" class="logo"><img src="./img/common/logo/logo.png" alt="마이데이터" /></a>
+          </div>
+          <div class="menu">
+            <ul class="depth1">
+              <li>
+                <a href="#">이용안내</a>
+                <ul class="depth2">
+                  <li><a href="#">서비스 소개</a></li>
+                  <li><a href="#">마이데이터 소개</a></li>
+                  <li><a href="#">사업안내</a></li>
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">통합지원 서비스</a>
+                <ul class="depth2">
+                  <li><a href="#">마이데이터 가이드북</a></li>
+                  <li><a href="#">전문가 상시자문</a></li>
+                  <li><a href="#">API 소재정보</a></li>
+                  <li><a href="#">지원사업 안내</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">마이데이터 서비스</a>
+                <ul class="depth2">
+                  <li><a href="#">서비스 맵</a></li>
+                  <li><a href="#">서비스 추천</a></li>
+                  <li><a href="#">서비스 체험</a></li>
+                  <li><a href="#">서비스 체험후기</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">참여광장</a>
+                <ul class="depth2">
+                  <li><a href="#">마이데이터 MBTI</a></li>
+                  <li><a href="#">마이데이터 소식 </a></li>
+                  <li><a href="#">아이디어 제안</a></li>
+                  <li><a href="#">설문참여</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="all_menu"><i class="ri-grid-fill"></i></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="first section">
+      <div class="container">
+        <div class="main_banner_wrap">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/main/main_banner_1.jpeg" alt="홈페이지 메인 배너 사진1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/main/main_banner_2.jpeg" alt="홈페이지 메인 배너 사진2" />
+              </div>
+            </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="main_quick_menu"></div>
+      </div>
+    </section>
     <footer class="footer"></footer>
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.min.js"vintegrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+    $(function(){
+      new Swiper('.main_banner_wrap .swiper', {
+        effect: 'fade',
+        loop: true,
+        autoplay: true,
+        pagination: { 
+            el: ".swiper-pagination", 
+            type : 'bullet',
+        },
+      });
+    });
+  </script>
   </body>
 </html>
