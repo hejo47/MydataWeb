@@ -66,35 +66,110 @@
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./img/main/main_banner_1.jpeg" alt="홈페이지 메인 배너 사진1" />
+                <a href="#">
+                  <img src="./img/main/main_banner_1.jpeg" alt="홈페이지 메인 배너 사진1" />
+                </a>
               </div>
               <div class="swiper-slide">
-                <img src="./img/main/main_banner_2.jpeg" alt="홈페이지 메인 배너 사진2" />
+                <a href="#">
+                  <img src="./img/main/main_banner_2.jpeg" alt="홈페이지 메인 배너 사진2" />
+                </a>
               </div>
             </div>
-              <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="main_search_menu_wrap">
+          <div class="search_wrap">
+            <span>SEARCH</span>
+            <input type="text" placeholder="검색어를 입력하세요" />
+            <button type="submit"><i class="ri-search-line"></i></button>
+          </div>
+          <div class="search_tag_wrap">
+            <span><a href="#">#데이터</a></span>
+            <span><a href="#">#API소재 정보</a></span>
+            <span><a href="#">#마이데이터</a></span>
+            <span><a href="#">#활용제도</a></span>
+          </div>
+          <div class="main_quick_menu_wrap">
+            <div class="top">
+              <a href="#" class="quick_menu">
+                <div class="quick_img">
+                  <img src="./img/main/icon/quick01.png" alt="quick1" />
+                </div>
+                <div class="quick_text">
+                  <p>가이드북</p>
+                  <span>마이데이터 활용법</span>
+                </div>
+              </a>
+              <a href="#" class="quick_menu">
+                <div class="quick_img">
+                  <img src="./img/main/icon/quick02.png" alt="quick1" />
+                </div>
+                <div class="quick_text">
+                  <p>가이드북</p>
+                  <span>마이데이터 활용법</span>
+                </div>
+              </a>
+              <a href="#" class="quick_menu">
+                <div class="quick_img">
+                  <img src="./img/main/icon/quick03.png" alt="quick1" />
+                </div>
+                <div class="quick_text">
+                  <p>가이드북</p>
+                  <span>마이데이터 활용법</span>
+                </div>
+              </a>
+            </div>
+            <div class="bottom">
+              <a href="#" class="quick_menu">
+                <div class="quick_img">
+                  <img src="./img/main/icon/quick04.png" alt="quick1" />
+                </div>
+                <div class="quick_text">
+                  <p>가이드북</p>
+                  <span>마이데이터 활용법</span>
+                </div>
+              </a>
+              <a href="#" class="quick_menu">
+                <div class="quick_img">
+                  <img src="./img/main/icon/quick05.png" alt="quick1" />
+                </div>
+                <div class="quick_text">
+                  <p>가이드북</p>
+                  <span>마이데이터 활용법</span>
+                </div>
+              </a>
+              <a href="#" class="quick_menu">
+                <div class="quick_img">
+                  <img src="./img/main/icon/quick06.png" alt="quick1" />
+                </div>
+                <div class="quick_text">
+                  <p>가이드북</p>
+                  <span>마이데이터 활용법</span>
+                </div>
+              </a>
             </div>
           </div>
         </div>
-        <div class="main_quick_menu"></div>
       </div>
     </section>
     <footer class="footer"></footer>
-    <script
-    src="https://code.jquery.com/jquery-3.6.3.min.js"vintegrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" vintegrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-    $(function(){
-      new Swiper('.main_banner_wrap .swiper', {
-        effect: 'fade',
-        loop: true,
-        autoplay: true,
-        pagination: { 
-            el: ".swiper-pagination", 
-            type : 'bullet',
-        },
+      $(function () {
+        new Swiper(".main_banner_wrap .swiper", {
+          effect: "fade",
+          loop: false,
+          autoplay: true,
+          pagination: {
+            el: ".swiper-pagination",
+            // type: "bullet",
+          },
+          // pagination: true,
+        });
       });
-    });
-  </script>
+    </script>
   </body>
 </html>
