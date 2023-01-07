@@ -105,10 +105,35 @@ a {
 }
 
 .section.first {
+  position: relative;
+  z-index: 0;
   background-image: url(../img/common/bg/rowgroup_bg.png);
   background-repeat: repeat;
   background-position: top center;
   background-size: contain;
+}
+.section.first::before {
+  width: 278px;
+  height: 221px;
+  background-image: url(../img/main/main_bg.png);
+  background-position: right 0 top 0;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+.section.first::after {
+  width: 171px;
+  height: 257px;
+  background-image: url(../img/main/cont_cc02.png);
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  right: 3%;
+  bottom: -88px;
+  z-index: -1;
 }
 .section.first .container {
   display: flex;
