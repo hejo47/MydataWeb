@@ -10,7 +10,7 @@
   background-color: #fff;
   overflow: hidden;
   border-bottom: 1px solid #DDD;
-  position: fixed;
+  // position: fixed;
   // height: 300px;
   z-index: 999;
   .container {
@@ -85,7 +85,7 @@
       background-repeat: no-repeat;
       content: "";
       position: absolute;
-      top: 80px;
+      top: 0;
       right: 0;
     }
     &::after {
@@ -103,7 +103,7 @@
     .container {
       @include flex(row, space-between, flex-start);
       column-gap: 50px;
-      padding-top: 140px;
+      padding-top: 60px;
       padding-bottom: 100px;
       .main_banner_wrap {
         width: 40%;
@@ -258,6 +258,62 @@
         }
       }
     }
+    .main_category {
+      width: 100%;
+      position: relative;
+      bottom: -35px;
+      &::before {
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        background-color: $main-theme-color;
+        z-index: -1;
+      }
+      .container {
+        background-color: $main-theme-color;
+        max-width: 1300px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding: 25px 0;
+        align-items: center;
+        .category_span {
+          width: 95px;
+          color: #FFF;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 1.5;
+          border-right: 1px solid #EEE;
+        }
+        .category_icon_wrap {
+          @include flex(row, flex-start, center);
+          width: 100%;
+          .cate_item {
+            padding: 15px 10px 20px;
+            border-radius: 20px;
+            a {
+              .cate_ico {
+                @include flex(row, center, flex-end);
+                width: 83.5px;
+                height: 40px;
+                margin-bottom: 8px;
+              }
+              .cate_txt {
+                text-align: center;
+                span {
+                  font-size: 17px;
+                  color: #FFF;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
-  
+  &.second {
+    
+  }
 }

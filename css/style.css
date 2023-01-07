@@ -34,7 +34,6 @@ a {
   background-color: #fff;
   overflow: hidden;
   border-bottom: 1px solid #DDD;
-  position: fixed;
   z-index: 999;
 }
 .header .container {
@@ -120,7 +119,7 @@ a {
   background-repeat: no-repeat;
   content: "";
   position: absolute;
-  top: 80px;
+  top: 0;
   right: 0;
 }
 .section.first::after {
@@ -142,7 +141,7 @@ a {
   align-items: flex-start;
   -moz-column-gap: 50px;
        column-gap: 50px;
-  padding-top: 140px;
+  padding-top: 60px;
   padding-bottom: 100px;
 }
 .section.first .container .main_banner_wrap {
@@ -298,4 +297,62 @@ a {
   font-size: 15px;
   color: #888;
   transition: 0.5s ease all;
+}
+.section.first .main_category {
+  width: 100%;
+  position: relative;
+  bottom: -35px;
+}
+.section.first .main_category::before {
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  background-color: #0e81a0;
+  z-index: -1;
+}
+.section.first .main_category .container {
+  background-color: #0e81a0;
+  max-width: 1300px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 25px 0;
+  align-items: center;
+}
+.section.first .main_category .container .category_span {
+  width: 95px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.5;
+  border-right: 1px solid #EEE;
+}
+.section.first .main_category .container .category_icon_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.section.first .main_category .container .category_icon_wrap .cate_item {
+  padding: 15px 10px 20px;
+  border-radius: 20px;
+}
+.section.first .main_category .container .category_icon_wrap .cate_item a .cate_ico {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 83.5px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+.section.first .main_category .container .category_icon_wrap .cate_item a .cate_txt {
+  text-align: center;
+}
+.section.first .main_category .container .category_icon_wrap .cate_item a .cate_txt span {
+  font-size: 17px;
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */
