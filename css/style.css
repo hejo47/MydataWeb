@@ -237,8 +237,14 @@ a {
   background-color: #F3FcF8;
   color: #008859;
 }
+.section.first .container .main_search_menu_wrap .main_quick_menu_wrap .top .quick_menu:hover span, .section.first .container .main_search_menu_wrap .main_quick_menu_wrap .bottom .quick_menu:hover span {
+  color: #008859;
+}
 .section.first .container .main_search_menu_wrap .main_quick_menu_wrap .top .quick_menu:hover .quick_img, .section.first .container .main_search_menu_wrap .main_quick_menu_wrap .bottom .quick_menu:hover .quick_img {
   transform: translateY(-5px);
+}
+.section.first .container .main_search_menu_wrap .main_quick_menu_wrap .top .quick_menu {
+  border-bottom: 1px solid #DDD;
 }
 .section.first .container .main_search_menu_wrap .main_quick_menu_wrap .quick_menu {
   display: flex;
@@ -246,7 +252,6 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding: 30px 20px;
-  border-bottom: 1px solid #DDD;
   width: 33.3333333333%;
   position: relative;
   transition: 0.5s ease all;
@@ -267,4 +272,5 @@ a {
 .section.first .container .main_search_menu_wrap .main_quick_menu_wrap .quick_menu .quick_text span {
   font-size: 15px;
   color: #888;
+  transition: 0.5s ease all;
 }/*# sourceMappingURL=style.css.map */
