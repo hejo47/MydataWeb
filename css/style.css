@@ -142,7 +142,7 @@ a {
   -moz-column-gap: 50px;
        column-gap: 50px;
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 160px;
 }
 .section.first .container .main_banner_wrap {
   width: 40%;
@@ -300,8 +300,8 @@ a {
 }
 .section.first .main_category {
   width: 100%;
-  position: relative;
-  bottom: -35px;
+  position: absolute;
+  bottom: -75px;
 }
 .section.first .main_category::before {
   width: 20%;
@@ -319,7 +319,10 @@ a {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 25px 0;
+  justify-content: flex-start;
   align-items: center;
+  -moz-column-gap: unset;
+       column-gap: unset;
 }
 .section.first .main_category .container .category_span {
   width: 95px;
@@ -334,7 +337,6 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
 }
 .section.first .main_category .container .category_icon_wrap .cate_item {
   padding: 15px 10px 20px;
@@ -355,4 +357,19 @@ a {
 .section.first .main_category .container .category_icon_wrap .cate_item a .cate_txt span {
   font-size: 17px;
   color: #FFF;
+}
+.section.first .main_category .container .cate_all_menu_wrap .cate_all_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #07627c;
+}
+.section.first .main_category .container .cate_all_menu_wrap .cate_all_menu span {
+  color: #FFF;
+  font-size: 16px;
+  margin-top: 8px;
 }/*# sourceMappingURL=style.css.map */
