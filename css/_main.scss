@@ -338,7 +338,6 @@
   }
   &.second {
     .container {
-      border: 1px solid #000;
       padding-top: 150px;
       padding-bottom: 40px;
       h2 {
@@ -380,7 +379,8 @@
         }
         .api_list {
           @include flex(column, flex-end, flex-end);
-          width: 40%;
+          width: 30%;
+          height: 320px;
           .list_title {
             @include flex(row, space-between, center);
             width: 100%;
@@ -388,25 +388,96 @@
               font-size: 20px;
             }
             a {
-
+              @include flex;
+              width: 22px;
+              height: 22px;
+              border-radius: 50%;
+              border: 1px solid #ddd;
+              color: #888;
+              transition: 0.7s ease all;
+              &:hover {
+                background-color: $main-theme-color;
+                color: #FFF;
+              }
             }
           }
           ul {
             margin-top: 15px;
+            width: 100%;
             li.api_item {
               border-bottom: 1px solid #ddd;
               padding: 12px 0px;
+              &:last-of-type {
+                border-bottom: none;
+              }
               a {
                 font-size: 18px;
                 display: block;
+                padding-left: 10px;
+                position: relative;
                 &:hover {
                   text-decoration: underline;
+                }
+                &::before {
+                  width: 4px;
+                  height: 4px;
+                  border-radius: 50%;
+                  background-color: #000;
+                  content: "";
+                  position: absolute;
+                  top: 49%;
+                  left: 0;
                 }
               }
               span {
                 color: #888;
                 font-size: 16px;
                 font-weight: 400;
+                margin-left: 10px;
+                width: 100%;
+                height: 20px;
+                display: block;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+      .guide_wrap {
+        @include flex(row, flex-start, center);
+        border: 1px solid #000;
+        background-color: $main-theme-color;
+        width: 100%;
+        .guide_text {
+          width: 125px;
+          text-align: center;
+          background-color: #0c9194;
+          span {
+            color: #46ecef;
+            font-size: 18px;
+          }
+          p {
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        .guide {
+          ul {
+            li.guide_item {
+              a {
+                div {
+                  @include flex(column);
+                  img {
+                    display: block;
+                    filter:  brightness(0) invert(1);
+                  }
+                  span {
+                    color: #FFF;
+                  }
+                }
               }
             }
           }

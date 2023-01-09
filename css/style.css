@@ -382,7 +382,6 @@ a {
   margin-top: 8px;
 }
 .section.second .container {
-  border: 1px solid #000;
   padding-top: 150px;
   padding-bottom: 40px;
 }
@@ -435,7 +434,8 @@ a {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  width: 40%;
+  width: 30%;
+  height: 320px;
 }
 .section.second .container .contact_wrap .api_list .list_title {
   display: flex;
@@ -447,22 +447,97 @@ a {
 .section.second .container .contact_wrap .api_list .list_title h4 {
   font-size: 20px;
 }
+.section.second .container .contact_wrap .api_list .list_title a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  color: #888;
+  transition: 0.7s ease all;
+}
+.section.second .container .contact_wrap .api_list .list_title a:hover {
+  background-color: #0e81a0;
+  color: #FFF;
+}
 .section.second .container .contact_wrap .api_list ul {
   margin-top: 15px;
+  width: 100%;
 }
 .section.second .container .contact_wrap .api_list ul li.api_item {
   border-bottom: 1px solid #ddd;
   padding: 12px 0px;
 }
+.section.second .container .contact_wrap .api_list ul li.api_item:last-of-type {
+  border-bottom: none;
+}
 .section.second .container .contact_wrap .api_list ul li.api_item a {
   font-size: 18px;
   display: block;
+  padding-left: 10px;
+  position: relative;
 }
 .section.second .container .contact_wrap .api_list ul li.api_item a:hover {
   text-decoration: underline;
+}
+.section.second .container .contact_wrap .api_list ul li.api_item a::before {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #000;
+  content: "";
+  position: absolute;
+  top: 49%;
+  left: 0;
 }
 .section.second .container .contact_wrap .api_list ul li.api_item span {
   color: #888;
   font-size: 16px;
   font-weight: 400;
+  margin-left: 10px;
+  width: 100%;
+  height: 20px;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.section.second .container .guide_wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #000;
+  background-color: #0e81a0;
+  width: 100%;
+}
+.section.second .container .guide_wrap .guide_text {
+  width: 125px;
+  text-align: center;
+  background-color: #0c9194;
+}
+.section.second .container .guide_wrap .guide_text span {
+  color: #46ecef;
+  font-size: 18px;
+}
+.section.second .container .guide_wrap .guide_text p {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 600;
+}
+.section.second .container .guide_wrap .guide ul li.guide_item a div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section.second .container .guide_wrap .guide ul li.guide_item a div img {
+  display: block;
+  filter: brightness(0) invert(1);
+}
+.section.second .container .guide_wrap .guide ul li.guide_item a div span {
+  color: #FFF;
 }/*# sourceMappingURL=style.css.map */
