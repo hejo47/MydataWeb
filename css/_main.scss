@@ -280,7 +280,7 @@
         padding: 25px 0;
         justify-content: flex-start;
         align-items: center;
-        column-gap: unset;
+        column-gap: 20px;
         .category_span {
           width: 95px;
           color: #FFF;
@@ -294,6 +294,10 @@
           .cate_item {
             padding: 15px 10px 20px;
             border-radius: 20px;
+            transition: 0.7s ease all;
+            &:hover {
+              background-color: #0e8bb0;
+            }
             a {
               .cate_ico {
                 @include flex(row, center, flex-end);
@@ -318,6 +322,10 @@
             height: 100px;
             border-radius: 50%;
             background-color: #07627c;
+            transition: 0.7s ease all;
+            &:hover {
+              background-color: #008859;
+            }
             span {
               color: #FFF;
               font-size: 16px;
