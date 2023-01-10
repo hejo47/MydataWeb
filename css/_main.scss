@@ -448,12 +448,13 @@
       .guide_wrap {
         @include flex(row, flex-start, center);
         border: 1px solid #000;
-        background-color: $main-theme-color;
+        background-color: #0b8487;
         width: 100%;
+        padding: 15px 0;
         .guide_text {
           width: 125px;
           text-align: center;
-          background-color: #0c9194;
+          // background-color: #0c9194;
           span {
             color: #46ecef;
             font-size: 18px;
@@ -465,14 +466,22 @@
           }
         }
         .guide {
+          width: 100%;
           ul {
+            @include flex;
+            width: 100%;
             li.guide_item {
+              width: calc(100% / 6);
               a {
+                display: block;
                 div {
                   @include flex(column);
-                  img {
+                  .guide_img{
+                    max-height: 40px;
+                    img {
                     display: block;
                     filter:  brightness(0) invert(1);
+                    }
                   }
                   span {
                     color: #FFF;
