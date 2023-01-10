@@ -352,6 +352,7 @@
           img {
             width: 405px;
             height: 376px;
+            display: block;
           }
           .contact_text {
             padding: 0 40px;
@@ -447,14 +448,21 @@
       }
       .guide_wrap {
         @include flex(row, flex-start, center);
-        border: 1px solid #000;
         background-color: #0b8487;
         width: 100%;
-        padding: 15px 0;
+        padding: 20px 0;
+        position: relative;
+        border-radius: 60px 0 30px 30px;
         .guide_text {
+          @include flex(column);
           width: 125px;
+          height: 140px;
           text-align: center;
-          // background-color: #0c9194;
+          background-color: #0c9194;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-radius: 60px 60px 0 30px;
           span {
             color: #46ecef;
             font-size: 18px;
@@ -470,17 +478,20 @@
           ul {
             @include flex;
             width: 100%;
+            padding-left: 125px;
             li.guide_item {
               width: calc(100% / 6);
+              border-right: 1px solid rgba(255, 255, 255, 0.2);
               a {
                 display: block;
                 div {
                   @include flex(column);
                   .guide_img{
                     max-height: 40px;
+                    margin-bottom: 8px;
                     img {
                     display: block;
-                    filter:  brightness(0) invert(1);
+                    filter: brightness(0) invert(1);
                     }
                   }
                   span {

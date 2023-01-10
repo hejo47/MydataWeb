@@ -405,6 +405,7 @@ a {
 .section.second .container .contact_wrap .contact img {
   width: 405px;
   height: 376px;
+  display: block;
 }
 .section.second .container .contact_wrap .contact .contact_text {
   padding: 0 40px;
@@ -510,14 +511,25 @@ a {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid #000;
   background-color: #0b8487;
   width: 100%;
-  padding: 15px 0;
+  padding: 20px 0;
+  position: relative;
+  border-radius: 60px 0 30px 30px;
 }
 .section.second .container .guide_wrap .guide_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 125px;
+  height: 140px;
   text-align: center;
+  background-color: #0c9194;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 60px 60px 0 30px;
 }
 .section.second .container .guide_wrap .guide_text span {
   color: #46ecef;
@@ -537,9 +549,11 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-left: 125px;
 }
 .section.second .container .guide_wrap .guide ul li.guide_item {
   width: 16.6666666667%;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 .section.second .container .guide_wrap .guide ul li.guide_item a {
   display: block;
@@ -552,6 +566,7 @@ a {
 }
 .section.second .container .guide_wrap .guide ul li.guide_item a div .guide_img {
   max-height: 40px;
+  margin-bottom: 8px;
 }
 .section.second .container .guide_wrap .guide ul li.guide_item a div .guide_img img {
   display: block;
